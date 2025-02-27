@@ -1,1 +1,1 @@
-# Latex_resume
+# Modular Linear Latex Resume. MIT License.
