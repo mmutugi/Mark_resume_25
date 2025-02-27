@@ -1,0 +1,198 @@
+%--------------------
+
+%Mark Munyi
+
+%CHECK MIT license. Item protected under MIT
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-1pt}]
+
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Mark Munyi} \\ 
+    \vspace{-2pt}
+    \small 713-287-0576 $|$
+    \href{mailto:mark.munyi@rice.edu}{\underline{Mark.Munyi@rice.edu}} $|$
+    \href{https://github.com/mmutugi}{\underline{github.com/mmutugi}} 
+\end{center}
+
+
+%-----------EDUCATION-----------
+\vspace{-8.5mm}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rice University}{Houston, TX}
+      {Bachelor of Science in Theoretical and Computational Chemistry}{Expected May 2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------Experence-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {James Shee Lab, Rice University}{Oct 2023 -- present}
+      {Research Assistant, Advisor - Prof. James Shee}{Houston, Texas}
+      \resumeItemListStart
+        \resumeItem{Probing (Anti)aromaticity with idealized triplet geometries in AFQMC and PySCF}
+        \resumeItem{Working on Approximating FCI values using the CIPSI flavour of sCI implemented in QP2.}
+        \resumeItem{Creating trial $\Psi$, for an in-house developed ph-AFQMC code}
+        \resumeItem{Seeking to integrate QP2 with PySCF and $^2C$ code to explore strong correlation.}
+    
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {T. W. Bonner Nuclear Lab, Rice university}{Jan 2023 -- May 2024}
+      {Research Scholar, Advisor - Prof. Darin Acosta}{Houston, Texas}
+      \resumeItemListStart
+        \resumeItem{Collaborated with researchers at T.W Bonner Nuclear Lab \& CERN in conducting GEANT-4 simulations for Muon passage through shielding cone}
+        \resumeItem{Developed a mathematical function to correct energy loss post-collision}
+        \resumeItem{Investigated and presented the impact of atomic number/radiation length on Muon energy loss, comparing Tungsten, Brass, Iron, and Concrete as reference materials}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Rice Department of Chemistry, Rice University}{Jan 2024 -- May 2024}
+      {Teaching Assistant, Fun w/t Chemistry, Advisors - Dr. Yearty Kasey, Prof. Michelle Gilbertson}{Houston, Texas}
+      \resumeItemListStart
+        \resumeItem{Lead student team in supporting General Chemistry II instruction, overseeing lab operations, facilitating office hours, guiding review sessions, and evaluating exams to optimize student educational achievements}
+        \resumeItem{Spearheading dynamic Chemistry outreach programs, orchestrating captivating experiments to inspire high school students' passion for Chemistry through Fun With Chemistry}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------Experience-----------
+\vspace{-4.5mm}
+\section{Active Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Selcted Configuration Interaction Trial $\Psi$s for ph-AFQMC}{Nov 2023 -- Present}
+      {AFQMC, Ab Initio, Theory Development}{James Shee Lab}
+      \resumeItemListStart
+        \resumeItem{Aims to create powerful new Quantum Monte carlo method(s) grounded in chemical and physical insights to understand and predict strong correlation from first principles, using both classical and quantum computation. Seeking to broaden ph-AFQMC applicability to $d-$block metal complexes affordably.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {(Anti)aromaticity With AFQMC}{Jan. 2025 -- Present}
+      {Computation Chemistry}{James Shee Lab}
+      \resumeItemListStart
+        \resumeItem{Exploring to validate theoretical behavior observed in various notorious anti-aromatic systems, including a novel family of doubly-antiaromatic carbon chains.}
+
+  \resumeSubHeadingListEnd
+  
+\vspace{-4mm}
+\section{Select Publications}
+      \resumeItemListStart
+      \vspace{-2mm}
+        \resumeItem{Danilov, D.; Ganoe, B.; \textbf{Munyi, M} and Shee, J. \textit{\href{https://pubs.acs.org/doi/10.1021/acs.jctc.4c01251}{Capturing Strong Correlation in Molecules with Phaseless Auxiliary-Field Quantum Monte Carlo Using Generalized Hartree Fock Trial Wavefunctions}}, Journal of Chemical Theory and Computation, 2025}
+        \resumeItem{Acosta, D.; Barberis, E.; Hurley,N.;Li, W.; O. Miguel Colin.; \textbf{Munyi, M}.;  Wang, Y.; Wood, D.; Yanga, K.; and Zuoa, X: \textit{\href{https://pos.sissa.it/476/817}{Physics Potential, Accelerator Options, and Experimental Challenges of a TeV-Scale Muon-Ion Collider}}, Proceedings of Science, 2024}
+      \resumeItemListEnd
+
+%-----------Awards-----------------------
+\vspace{-4mm}
+\section{Select Awards}
+      \resumeItemListStart
+      \vspace{-1mm}
+        \resumeItem{Outstanding Presentation Award, Gulf Coast Undergraduate Research Symposium, Rice University, October 2024}
+        \resumeItem{Paul S. Engel Research Fellowship, Dept. of Chemistry, Rice University, May 2024}
+        \resumeItem{1$^{st}$ place Poster award, Dept. of Chemistry,Rice Chemistry, summer 2024.}
+        \resumeItem{T.W Bonner Research Fellowship, Dept. of Physics and Astronomy, Rice University, Summer 2023}
+      \resumeItemListEnd
+
+%-----------Skill-----------
+\vspace{-4mm}
+\section{Languages \& Technologies}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \vspace{-1mm}
+     \textbf{Fluent:} Python, C++, C, Bash, Matlab, LaTex, Julia} $|$ \textbf{Intermediate:} oCaml, Fortran, CUDA $|$ \textbf{Other Fluent tech:} Slurm, MPI and OpenMP, Globus, Git, ML \& Neural Networks\\
+     \vspace{1mm}
+
+    }
+ \end{itemize}
+
+\end{document}
